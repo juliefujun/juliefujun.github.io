@@ -185,7 +185,7 @@ a.map:active {
   height: 100%;
   gap: 10px;
   margin-left: 10%;
-  width: 200%;
+  width: 250%;
   overflow-x: auto;
 }
 
@@ -388,7 +388,7 @@ a.map:active {
   font-size: 1.3em;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 920px) and (min-height: 100px) and (max-height: 420px) {
+@media only screen and (min-width: 100px) and (max-width: 920px) and (min-height: 100px) and (max-height: 912px) {
   h1 {
     font-size: 24px;
   }
