@@ -1,0 +1,547 @@
+
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 100vh;
+  margin: 0px;
+  overflow-y: hidden;
+  background-color: rgb(255, 234, 215);
+  
+}
+
+header {
+  grid-area: 1 / 1 / 5 / 2;
+  position: fixed;
+  margin: 20px;
+  border: 5px;
+  font-family: "Irish Grover", Josefin, sans;
+}
+
+h1 {
+  text-align: left;
+  font-size: 1.5em;
+  margin: 0;
+  color: #BF5700;
+}
+
+.lorax-quote {
+  grid-area: 2 / 1 / 3 / 1;
+  text-align: left;
+  font-size: 1.5em;
+  text-wrap: wrap;
+  padding: 4px;
+  margin: 12px;
+  position: fixed;
+  font-family: "Josefin Sans", sans;
+}
+
+.directions {
+  grid-area: 4 / 1 / 5 / 3;
+  margin-left: 10%;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+/* .seen:open {
+    & summary {
+        &::marker {
+            content: ":D ";
+        }
+    }
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: auto !important;
+}
+
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+}
+
+details > summary:first-of-type {
+    list-style: inside disclosure-closed;
+
+}
+
+.seen:not(:open) {
+    & summary {
+        &::marker {
+            content: ":| ";
+        }
+    }
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: auto !important;
+}
+details > summary:first-of-type {
+    list-style: inside disclosure-closed; */
+
+.seen:not(:open) {
+    summary {
+
+      &::marker {
+        content: url("images/unless.png");
+        max-width: 20px;
+        max-height: 10px;
+      }
+
+      &::after {
+        content: "not seen";
+        color: #D22DE1;
+      }
+    }
+  }
+
+.seen{
+  margin-top: 16px;
+}
+.seen:open {
+    summary {
+      &::marker {
+        content: url("images/Seen.png");
+      }
+
+      &::after {
+        color: #3DC1D5;
+        content: "seen!" !important;
+      }
+
+    }
+
+  }
+
+.map {
+  align-items: bottom;
+}
+a.map {
+  color: black;
+  text-decoration: none; 
+  font-family: "Josefin Sans", sans;
+  font-size: 1.2em;
+}
+
+a.map:link {
+  color: black; 
+}
+
+a.map:visited {
+  color: black; 
+}
+
+a.map:hover {
+  color: rgb(174, 139, 255); 
+}
+
+a.map:active {
+  color: red; 
+}
+
+/* .first-panel {
+  background-color: lightblue;
+  grid-area: 8 / 1 / 20 / 3;s
+} */
+
+/* .second-panel {
+  background-color: lightgray;
+  grid-area: 8 / 3 / 20 / 8;
+} */
+
+.scroll-frame {
+  grid-area: 5 / 1 / 10 / 3;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 100%;
+  gap: 10px;
+  margin-left: 10%;
+  width: 200%;
+  overflow-x: auto;
+}
+
+.first-plant-item {
+  grid-area: 1 / 1 / 6 / 2 ;
+  background-image: url("images/Lantanacamara.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.second-plant-item {
+  grid-area: 1 / 2 / 6 / 3 ;
+  background-image: url("images/Muhlenberrglialindheimeri.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.third-plant-item {
+  grid-area: 1 / 3 / 6 / 4 ;
+  background-image: url("images/Tradescantiaspathacea.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+.fourth-plant-item {
+  grid-area: 1 / 4 / 6 / 5 ;
+  background-image: url("images/Salviagreggii_2.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.fifth-plant-item {
+  grid-area: 1 / 5 / 6 / 6 ;
+  background-image: url("images/Mahoniaeurybracteata.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.sixth-plant-item {
+  grid-area: 1 / 6 / 6 / 7 ;
+  background-image: url("images/Stigmaphyllonbonariense.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.seventh-plant-item {
+  grid-area: 1 / 7 / 6 / 8 ;
+  background-image: url("images/Ipomoeacairica.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.eighth-plant-item {
+  grid-area: 1 / 8 / 6 / 9 ;
+  background-image: url("images/justiciaspicigera.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.ninth-plant-item {
+  grid-area: 1 / 9 / 6 / 10 ;
+  background-image: url("images/Rosakorbin.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.tenth-plant-item {
+  grid-area: 1 / 10 / 6 / 11 ;
+  background-image: url("images/Taxodiumdistichum.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px;
+  color: white;
+  padding-left: 12px;
+}
+
+.first-unless {
+  grid-area: 6 / 1 / 7 / 2 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.second-unless {
+  grid-area: 6 / 2 / 7 / 3 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.third-unless {
+  grid-area: 6 / 3 / 7 / 4 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.fourth-unless {
+  grid-area: 6 / 4 / 7 / 5 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.fifth-unless {
+  grid-area: 6 / 5 / 7 / 6 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.sixth-unless {
+  grid-area: 6 / 6 / 7 / 7 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.seventh-unless {
+  grid-area: 6 / 7 / 7 / 8 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.eighth-unless {
+  grid-area: 6 / 8 / 7 / 9 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.ninth-unless {
+  grid-area: 6 / 9 / 7 / 10 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+.tenth-unless {
+  grid-area: 6 / 10 / 7 / 11 ;
+  padding: 12px;
+  justify-items: center;
+  font-family: "Josefin Sans", sans;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 480px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  header {
+  font-size: 14px;
+
+}
+  .lorax-quote {
+    font-size: 12px;
+   
+  }
+ 
+ .map {
+    font-size: 12px;
+   }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  header {
+  font-size: 30px;
+  }
+  .lorax-quote {
+    font-size: 20px;
+  }
+  
+   .map {
+    font-size: 14px;
+   }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  header {
+  font-size: 40px;
+ 
+}
+  .lorax-quote {
+    font-size: 24px;
+
+  }
+   .map {
+    font-size: 16px;
+   }
+}
+
+@media only screen and (min-width: 1600px) {
+  header {
+  font-size: 3em;
+ 
+}
+  .lorax-quote {
+    font-size: 2em;
+  
+  }
+ .map {
+    font-size: 20px;
+ }
+}
+
+
+/* ---------------------------------------------------
+------------------------------------------------------
+-------------------- Plant info ----------------------
+------------------------------------------------------
+------------------------------------------------------ */
+
+
+.plant-container {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(3,1fr);
+  height: 100vh;
+  gap: 10px;
+  overflow-y: hidden;
+}
+
+h1.plant-name {
+  font-family: "Irish Grover", Josefin, sans;
+  font-size: 3em;
+}
+
+.plant-image-1 {
+  grid-area: 1 / 1 / -1 / 2;
+  background-image: url("images/Lantanacamara_3.jpg");
+  background-size: cover;
+  padding: 10%;
+}
+
+.plant-image-2 {
+  grid-area: 1 / 1 / -1 / 2;
+  background-image: url("images/Lantanacamara_3.jpg");
+  background-size: cover;
+  padding: 10%;
+}
+
+.plant-image-3 {
+  grid-area: 1 / 1 / -1 / 2;
+  background-image: url("images/Tradescantiaspathacea_2.jpg");
+  background-size: cover;
+  padding: 10%;
+}
+
+.plant-image-4 {
+  grid-area: 1 / 1 / -1 / 2;
+  background-image: url("images/Salviagreggii_3.jpg");
+  background-size: cover;
+  padding: 10%;
+}
+
+.plant-image-9 {
+  grid-area: 1 / 1 / -1 / 2;
+  background-image: url("images/Rosakorbin_2.jpg");
+  background-size: cover;
+  padding: 10%;
+}
+
+.plant-facts {
+  grid-area: 1 / 2 / -1 / 4;
+  background-color: rgb(255, 218, 246);
+  padding: 10%;
+  font-family: "Josefin Sans", sans;
+}
+
+.info-list {
+  font-family: "Josefin Sans", sans;
+  margin: 10%;
+  font-size: 2em;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+a.back-button {
+  color: white;
+  text-decoration: none; 
+  font-size: 1.5em;
+}
+
+a.back-button:link {
+  color: white; 
+}
+
+a.back-button:visited {
+  color: white; 
+}
+
+a.back-button:hover {
+  color: white; 
+}
+
+a.back-button:active {
+  color: white; 
+}
+
+/* ---------------------------------------------------
+------------------------------------------------------
+-------------------- Map and Key ---------------------
+------------------------------------------------------
+------------------------------------------------------ */
+
+.home {
+  margin: 3%;
+  padding: 4px;
+  border: 2px;
+  color: black;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 2em;
+}
+
+a.home-button {
+  color: black;
+  text-decoration: none; 
+  font-size: 1.5em;
+}
+
+a.home-button:link {
+  color: black; 
+}
+
+a.home-button:visited {
+  color: black; 
+}
+
+a.home-button:hover {
+  color: #BF5700; 
+}
+
+a.home-button:active {
+  color: #BF5700; 
+}
