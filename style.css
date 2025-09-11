@@ -22,7 +22,8 @@ header {
   grid-area: 1 / 1 / 5 / 2;
   position: fixed;
   margin: 20px;
-  border: 5px;
+  padding: 4px;
+  border: 2px;
   font-family: "Irish Grover", Josefin, sans;
 }
 
@@ -47,6 +48,7 @@ h1 {
 .directions {
   grid-area: 4 / 1 / 5 / 3;
   margin-left: 10%;
+
 }
 
 ol {
@@ -110,17 +112,20 @@ details > summary:first-of-type {
         content: url("images/unless.png");
         max-width: 20px;
         max-height: 10px;
+        font-family: "Josefin Sans", sans-serif;
       }
 
       &::after {
         content: "not seen";
         color: #D22DE1;
+        font-family: "Josefin Sans", sans-serif;
       }
     }
   }
 
 .seen{
-  margin-top: 16px;
+  margin-top: 8px;
+  font-family: "Josefin Sans", sans-serif;
 }
 .seen:open {
     summary {
@@ -144,7 +149,6 @@ a.map {
   color: black;
   text-decoration: none; 
   font-family: "Josefin Sans", sans;
-  font-size: 1.2em;
 }
 
 a.map:link {
@@ -177,7 +181,7 @@ a.map:active {
   grid-area: 5 / 1 / 10 / 3;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   height: 100%;
   gap: 10px;
   margin-left: 10%;
@@ -288,116 +292,262 @@ a.map:active {
   grid-area: 6 / 1 / 7 / 2 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover",sans-serif;
+  font-size: 1.3em;
 }
 
 .second-unless {
   grid-area: 6 / 2 / 7 / 3 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
 }
 
 .third-unless {
   grid-area: 6 / 3 / 7 / 4 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
 }
 
 .fourth-unless {
   grid-area: 6 / 4 / 7 / 5 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
 }
 
 .fifth-unless {
   grid-area: 6 / 5 / 7 / 6 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
 }
 
 .sixth-unless {
   grid-area: 6 / 6 / 7 / 7 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
 }
 
 .seventh-unless {
   grid-area: 6 / 7 / 7 / 8 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
 }
 
 .eighth-unless {
   grid-area: 6 / 8 / 7 / 9 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
+  align-items: center;
 }
 
 .ninth-unless {
   grid-area: 6 / 9 / 7 / 10 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  align-items: center;
+  font-size: 1.3em;
 }
 
 .tenth-unless {
   grid-area: 6 / 10 / 7 / 11 ;
   padding: 12px;
   justify-items: center;
-  font-family: "Josefin Sans", sans;
+  align-items: center;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.3em;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 480px) {
+@media only screen and (min-width: 100px) and (max-width: 920px) and (min-height: 100px) and (max-height: 420px) {
   h1 {
-    font-size: 16px;
+    font-size: 20px;
   }
-
-  header {
-  font-size: 14px;
-
-}
   .lorax-quote {
-    font-size: 12px;
+    font-size: 16px;
    
   }
  
  .map {
-    font-size: 12px;
+    font-size: 14px;
    }
+ 
+  .first-unless {
+    font-size: 12px;
+  }
+
+  .second-unless {
+    font-size: 12px;
+  }
+
+  .third-unless {
+    font-size: 12px;
+  }
+
+  .fourth-unless {
+    font-size: 12px;
+  }
+
+  .fifth-unless {
+    font-size: 12px;
+  }
+
+  .sixth-unless {
+    font-size: 12px;
+  }
+
+  .seventh-unless {
+    font-size: 12px;
+  }
+
+  .eighth-unless {
+    font-size: 12px;
+  }
+
+  .ninth-unless {
+    font-size: 12px;
+  }
+ 
+  .tenth-unless {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
-  header {
-  font-size: 30px;
+
+@media only screen and (min-width: 930px) and (max-width: 1024px) and (min-height: 420px) and (max-height: 930px) and (orientation: landscape) {
+  h1 {
+  font-size: 20px;
   }
   .lorax-quote {
-    font-size: 20px;
+    font-size: 18px;
   }
   
    .map {
-    font-size: 14px;
+    font-size: 16px;
    }
+   .first-unless {
+    font-size: 14px;
+  }
+
+  .second-unless {
+    font-size: 14px;
+  }
+
+  .third-unless {
+    font-size: 14px;
+  }
+
+  .fourth-unless {
+    font-size: 14px;
+  }
+
+  .fifth-unless {
+    font-size: 14px;
+  }
+
+  .sixth-unless {
+    font-size: 14px;
+  }
+
+  .seventh-unless {
+    font-size: 14px;
+  }
+
+  .eighth-unless {
+    font-size: 14px;
+  }
+
+  .ninth-unless {
+    font-size: 14px;
+  }
+ 
+  .tenth-unless {
+    font-size: 14px;
+  }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1600px) {
-  header {
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  
+  h1 {
   font-size: 40px;
  
-}
+  }
   .lorax-quote {
     font-size: 24px;
 
   }
-   .map {
-    font-size: 16px;
+   .directions {
+    font-size: 20px;
    }
+
+   .first-unless {
+    font-size: 12px;
+  }
+
+  .second-unless {
+    font-size: 12px;
+  }
+
+  .third-unless {
+    font-size: 12px;
+  }
+
+  .fourth-unless {
+    font-size: 12px;
+  }
+
+  .fifth-unless {
+    font-size: 12px;
+  }
+
+  .sixth-unless {
+    font-size: 12px;
+  }
+
+  .seventh-unless {
+    font-size: 12px;
+  }
+
+  .eighth-unless {
+    font-size: 12px;
+  }
+
+  .ninth-unless {
+    font-size: 12px;
+  }
+ 
+  .tenth-unless {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -412,6 +562,45 @@ a.map:active {
  .map {
     font-size: 20px;
  }
+ .first-unless {
+    font-size: 12px;
+  }
+
+  .second-unless {
+    font-size: 12px;
+  }
+
+  .third-unless {
+    font-size: 12px;
+  }
+
+  .fourth-unless {
+    font-size: 12px;
+  }
+
+  .fifth-unless {
+    font-size: 12px;
+  }
+
+  .sixth-unless {
+    font-size: 12px;
+  }
+
+  .seventh-unless {
+    font-size: 12px;
+  }
+
+  .eighth-unless {
+    font-size: 12px;
+  }
+
+  .ninth-unless {
+    font-size: 12px;
+  }
+ 
+  .tenth-unless {
+    font-size: 12px;
+  }
 }
 
 
@@ -441,6 +630,7 @@ h1.plant-name {
   background-image: url("images/Lantanacamara_3.jpg");
   background-size: cover;
   padding: 10%;
+  
 }
 
 .plant-image-2 {
@@ -516,7 +706,7 @@ a.back-button:active {
 ------------------------------------------------------ */
 
 .home {
-  margin: 3%;
+  margin: 20px;
   padding: 4px;
   border: 2px;
   color: black;
