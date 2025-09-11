@@ -390,7 +390,7 @@ a.map:active {
 
 @media only screen and (min-width: 100px) and (max-width: 920px) and (min-height: 100px) and (max-height: 420px) {
   h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .lorax-quote {
     font-size: 16px;
@@ -440,10 +440,13 @@ a.map:active {
   .tenth-unless {
     font-size: 12px;
   }
+  .plant-facts {
+    font-size: 12px;
+  }
 }
 
 
-@media only screen and (min-width: 930px) and (max-width: 1024px) and (min-height: 420px) and (max-height: 930px) and (orientation: landscape) {
+@media only screen and (min-width: 930px) and (max-width: 1024px) and (min-height: 500px) and (max-height: 930px) and (orientation: landscape) {
   h1 {
   font-size: 20px;
   }
@@ -493,6 +496,9 @@ a.map:active {
   .tenth-unless {
     font-size: 14px;
   }
+  .plant-facts {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -510,49 +516,52 @@ a.map:active {
    }
 
    .first-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .second-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .third-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .fourth-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .fifth-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .sixth-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .seventh-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .eighth-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .ninth-unless {
-    font-size: 12px;
+    font-size: 16px;
   }
  
   .tenth-unless {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  .plant-facts {
+    font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  header {
-  font-size: 3em;
+  h1 {
+  font-size: 2em;
  
 }
   .lorax-quote {
@@ -562,7 +571,10 @@ a.map:active {
  .map {
     font-size: 20px;
  }
- .first-unless {
+ .plant-facts {
+    font-size: 18px;
+  }
+ /* .first-unless {
     font-size: 12px;
   }
 
@@ -599,8 +611,8 @@ a.map:active {
   }
  
   .tenth-unless {
-    font-size: 12px;
-  }
+    font-size: 1px;
+  } */
 }
 
 
@@ -629,6 +641,7 @@ h1.plant-name {
   grid-area: 1 / 1 / -1 / 2;
   background-image: url("images/Lantanacamara_3.jpg");
   background-size: cover;
+  background-position: center center;
   padding: 10%;
   
 }
@@ -637,6 +650,7 @@ h1.plant-name {
   grid-area: 1 / 1 / -1 / 2;
   background-image: url("images/Lantanacamara_3.jpg");
   background-size: cover;
+  background-position: center center;
   padding: 10%;
 }
 
@@ -644,6 +658,7 @@ h1.plant-name {
   grid-area: 1 / 1 / -1 / 2;
   background-image: url("images/Tradescantiaspathacea_2.jpg");
   background-size: cover;
+  background-position: center center;
   padding: 10%;
 }
 
@@ -651,6 +666,7 @@ h1.plant-name {
   grid-area: 1 / 1 / -1 / 2;
   background-image: url("images/Salviagreggii_3.jpg");
   background-size: cover;
+  background-position: center center;
   padding: 10%;
 }
 
@@ -658,6 +674,7 @@ h1.plant-name {
   grid-area: 1 / 1 / -1 / 2;
   background-image: url("images/Rosakorbin_2.jpg");
   background-size: cover;
+  background-position: center center;
   padding: 10%;
 }
 
