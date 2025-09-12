@@ -24,7 +24,7 @@ header {
   margin: 20px;
   padding: 4px;
   border: 2px;
-  font-family: "Irish Grover", Josefin, sans;
+  font-family: "Irish Grover", Josefin Sans, sans-serif;
 }
 
 h1 {
@@ -32,6 +32,13 @@ h1 {
   font-size: 1.5em;
   margin: 0;
   color: #BF5700;
+}
+
+.directions p {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .lorax-quote {
@@ -146,7 +153,7 @@ details > summary:first-of-type {
   align-items: bottom;
 }
 a.map {
-  color: black;
+  color: #BF5700;
   text-decoration: none; 
   font-family: "Josefin Sans", sans;
 }
@@ -156,7 +163,7 @@ a.map:link {
 }
 
 a.map:visited {
-  color: black; 
+  color: #BF5700; 
 }
 
 a.map:hover {
@@ -388,12 +395,12 @@ a.map:active {
   font-size: 1.3em;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 420px) {
+@media only screen and (max-width: 420px) and (orientation: portrait) {
   header {
     font-size: 30px;
   }
   .lorax-quote {
-    font-size: 16px;
+    font-size: 20px;
    
   }
   .scroll-frame {
@@ -444,12 +451,18 @@ a.map:active {
     font-size: 12px;
   }
   .plant-facts {
-    font-size: 12px;
+    font-size: 10px;
   }
+
+  .info-list {
+    font-size: 10px;
+  }
+
+
 }
 
 
-@media only screen and (min-width: 930px) and (max-width: 1024px) and (min-height: 500px) and (max-height: 930px) and (orientation: landscape) {
+@media only screen and (min-width: 930px) and (max-width: 1024px) and (min-height: 500px) and (max-height: 930px) {
   h1 {
   font-size: 20px;
   }
@@ -502,6 +515,11 @@ a.map:active {
   .plant-facts {
     font-size: 14px;
   }
+
+  .info-list {
+    font-size: 12px;
+}
+  
 }
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
@@ -557,9 +575,8 @@ a.map:active {
   .tenth-unless {
     font-size: 16px;
   }
-  .plant-facts {
-    font-size: 16px;
-  }
+
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -577,45 +594,7 @@ a.map:active {
  .plant-facts {
     font-size: 18px;
   }
- /* .first-unless {
-    font-size: 12px;
-  }
 
-  .second-unless {
-    font-size: 12px;
-  }
-
-  .third-unless {
-    font-size: 12px;
-  }
-
-  .fourth-unless {
-    font-size: 12px;
-  }
-
-  .fifth-unless {
-    font-size: 12px;
-  }
-
-  .sixth-unless {
-    font-size: 12px;
-  }
-
-  .seventh-unless {
-    font-size: 12px;
-  }
-
-  .eighth-unless {
-    font-size: 12px;
-  }
-
-  .ninth-unless {
-    font-size: 12px;
-  }
- 
-  .tenth-unless {
-    font-size: 1px;
-  } */
 }
 
 
@@ -700,7 +679,7 @@ h1.plant-name {
 a.back-button {
   color: white;
   text-decoration: none; 
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 a.back-button:link {
