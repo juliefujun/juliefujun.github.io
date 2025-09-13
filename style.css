@@ -55,6 +55,8 @@ h1 {
 .directions {
   grid-area: 4 / 1 / 5 / 3;
   margin-left: 10%;
+  padding: 6px 4px 12px 0px;
+  border: 4px;
 
 }
 
@@ -150,12 +152,17 @@ details > summary:first-of-type {
   }
 
 .map {
-  align-items: bottom;
+  margin-bottom: 8px;
+
 }
 a.map {
   color: #BF5700;
   text-decoration: none; 
   font-family: "Josefin Sans", sans;
+  padding: 4px 6px 1px 0px;
+  border: 4px;
+  margin-right: 10%;
+  text-wrap: wrap;
 }
 
 a.map:link {
@@ -395,7 +402,7 @@ a.map:active {
   font-size: 1.3em;
 }
 
-@media only screen and (max-width: 420px) and (orientation: portrait) {
+@media only screen and (max-width: 620px) and (orientation: portrait) {
   header {
     font-size: 30px;
   }
