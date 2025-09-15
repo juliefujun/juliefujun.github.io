@@ -468,11 +468,10 @@ a.map:active {
   .info-list {
     font-size: 10px;
   }
-
-
+  
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   header {
   font-size: 40px;
   }
@@ -531,6 +530,7 @@ a.map:active {
 }
   
 }
+  
 
 @media only screen and (max-height: 700px) and (orientation: landscape) {
   header {
@@ -652,9 +652,8 @@ a.map:active {
 .plant-container {
   display: grid;
   grid-template-rows: 1;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   height: 100vh;
-  gap: 10px;
   overflow-y: hidden;
 }
 
@@ -752,6 +751,52 @@ a.back-button:hover {
 
 a.back-button:active {
   color: white; 
+}
+
+@media only screen and (max-width: 700px) {
+  .plant-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+  .plant-image-1 img {
+    grid-area: 1 / 1 / 3 / 2;
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+
+  .plant-facts {
+    grid-area: 2 / 1 / 4 / 2;
+    border: 10%;
+    font-size: 12px;
+  }
+
+  .plant-image-3 img {
+    grid-area: 1 / 1 / 3 / 2;
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+
+.plant-image-4 img {
+    grid-area: 1 / 1 / 3 / 2;
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+
+.plant-image-9 img {
+    grid-area: 1 / 1 / 3 / 2;
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+
 }
 
 /* ---------------------------------------------------
