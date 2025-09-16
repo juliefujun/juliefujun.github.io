@@ -47,6 +47,7 @@ h1 {
   font-size: 1.5em;
   text-wrap: wrap;
   padding: 4px;
+  border: 6px;
   margin: 12px;
   position: fixed;
   font-family: "Josefin Sans", sans;
@@ -534,7 +535,7 @@ a.map:active {
 
 @media only screen and (max-height: 700px) and (orientation: landscape) {
   header {
-    font-size: 24px;
+    font-size: 16px;
   }
   .lorax-quote {
     font-size: 16px;
@@ -548,8 +549,9 @@ a.map:active {
     font-size: 12px;
    }
 
-  .directions {
-    font-size: 12px;
+  .directions p {
+    font-size: 16px;
+    margin-bottom: 0px;
   }
  
   .first-unless {
