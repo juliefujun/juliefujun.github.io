@@ -7,6 +7,7 @@
   
 }
 
+
 .container {
   display: grid; 
   grid-template-columns: repeat(2,1fr);
@@ -14,8 +15,29 @@
   height: 100vh;
   margin: 0px;
   overflow-y: hidden;
-  background-color: rgb(255, 234, 215);
+  background-color:  #E99C34;
   
+}
+
+a.to-welcome {
+  text-decoration: none;
+  color: #FEFD0A;
+}
+
+a.to-welcome:link {
+  color: #FEFD0A;
+}
+
+a.back-button:visited {
+  color: #FEFD0A;
+}
+
+a.back-button:hover {
+  color: #FEFD0A;
+}
+
+a.back-button:active {
+  color: #FEFD0A;
 }
 
 header {
@@ -31,7 +53,7 @@ h1 {
   text-align: left;
   font-size: 1.5em;
   margin: 0;
-  color: #BF5700;
+  color: #FEFD0A;
 }
 
 .directions p {
@@ -51,6 +73,7 @@ h1 {
   margin: 12px;
   position: fixed;
   font-family: "Josefin Sans", sans;
+  color:#FEFD0A;
 }
 
 .directions {
@@ -59,6 +82,12 @@ h1 {
   padding: 6px 4px 12px 0px;
   border: 4px;
 
+}
+
+a.map {
+  color: white;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1em;
 }
 
 ol {
@@ -87,7 +116,7 @@ details.seen{
 
       &::after {
         content: "not seen";
-        color: #D22DE1;
+        color: #F7181E;
         font-family: "Josefin Sans", sans-serif;
       }
 
@@ -106,7 +135,7 @@ details.seen{
       }
 
       &::after {
-        color: #3DC1D5;
+        color: #4F9D14;
         content: "seen!";
       }
 
@@ -114,35 +143,7 @@ details.seen{
 
   }
 
-.map {
-  margin-bottom: 8px;
 
-}
-a.map {
-  color: #BF5700;
-  text-decoration: none; 
-  font-family: "Josefin Sans", sans;
-  padding: 4px 6px 1px 0px;
-  border: 4px;
-  margin-right: 10%;
-  text-wrap: wrap;
-}
-
-a.map:link {
-  color: #BF5700; 
-}
-
-a.map:visited {
-  color: #BF5700; 
-}
-
-a.map:hover {
-  color: #3DC1D5; 
-}
-
-a.map:active {
-  color: red; 
-}
 
 /* .first-panel {
   background-color: lightblue;
@@ -315,6 +316,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover",sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 .second-unless {
@@ -325,6 +327,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 .third-unless {
@@ -335,6 +338,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 .fourth-unless {
@@ -345,6 +349,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 .fifth-unless {
@@ -355,6 +360,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 .sixth-unless {
@@ -365,6 +371,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 .seventh-unless {
@@ -375,6 +382,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 .eighth-unless {
@@ -385,6 +393,7 @@ a.map:active {
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
   align-items: center;
+  color: white;
 }
 
 .ninth-unless {
@@ -395,6 +404,7 @@ a.map:active {
   font-family: "Irish Grover", sans-serif;
   align-items: center;
   font-size: 1.3em;
+  color: white;
 }
 
 .tenth-unless {
@@ -405,6 +415,7 @@ a.map:active {
   text-align: center;
   font-family: "Irish Grover", sans-serif;
   font-size: 1.3em;
+  color: white;
 }
 
 @media only screen and (max-width: 700px) {
@@ -419,8 +430,8 @@ a.map:active {
   width: 600%;
 }
  
- .map {
-    font-size: 14px;
+ a.map {
+    font-size: 16px;
    }
  
   .first-unless {
@@ -480,7 +491,7 @@ a.map:active {
     font-size: 24px;
   }
   
-   .map {
+   a.map {
     font-size: 16px;
    }
    .first-unless {
@@ -535,7 +546,7 @@ a.map:active {
 
 @media only screen and (max-height: 700px) and (orientation: landscape) {
   header {
-    font-size: 16px;
+    font-size: 20px;
   }
   .lorax-quote {
     font-size: 16px;
@@ -545,7 +556,7 @@ a.map:active {
   width: 200%;
 }
  
- .map {
+ a.map {
     font-size: 12px;
    }
 
@@ -613,7 +624,7 @@ a.map:active {
 
       &::after {
         content: "not seen";
-        color: #D22DE1;
+        color: #F7181E;
         font-family: "Josefin Sans", sans-serif;
       }
 
@@ -633,7 +644,7 @@ a.map:active {
       }
 
       &::after {
-        color: #3DC1D5;
+        color: #4F9D14;
         content: "seen!";
       }
 
@@ -714,7 +725,7 @@ h1.plant-name {
 
 .plant-facts {
   grid-area: 1 / 2 / -1 / 4;
-  background-color: rgb(255, 218, 246);
+  background-color: #E99C34;
   padding: 10%;
   font-family: "Josefin Sans", sans;
 }
@@ -807,13 +818,11 @@ a.back-button:active {
 ------------------------------------------------------
 ------------------------------------------------------ */
 
-.home {
+a.home {
   color: white;
   font-family: "Irish Grover", sans-serif;
-  font-size: 2em;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
+  top: 1em;
+  right: 1em;
 }
 
 .home img {
@@ -821,30 +830,44 @@ a.back-button:active {
   width: 100%;
   height: auto;
   max-width: none;
+
 }
 
 a.home-button {
-  color: white;
+  color: #4F9D14;
   text-decoration: none; 
-  font-size: 1em;
+  font-size: 2em;
   position: absolute;
   top: 2rem;
   left: 2rem;
   z-index: 1;
+  font-family: "Irish Grover", sans-serif;
+  
 }
 
 a.home-button:link {
-  color: white; 
+  color: #4F9D14; 
 }
 
 a.home-button:visited {
-  color: white; 
+  color: #4F9D14; 
 }
 
 a.home-button:hover {
-  color: #BF5700; 
+  color: #4F9D14; 
 }
 
 a.home-button:active {
-  color: #BF5700; 
+  color: #4F9D14; 
+}
+
+@media only screen and (max-width: 420px) {
+  .home img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
