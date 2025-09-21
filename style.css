@@ -47,7 +47,6 @@ header {
   padding: 4px;
   border: 2px;
   font-family: "Irish Grover", Josefin Sans, sans-serif;
-  background-color: #E99C34;
 }
 
 h1 {
@@ -55,29 +54,26 @@ h1 {
   font-size: 1.5em;
   margin: 0;
   color: #FEFD0A;
+  text-shadow: 2px 4px 4px rgba(103, 110, 123, 0.3);
 }
 
-.directions p {
+/* p.directions {
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
-}
+} */
 
-.lorax-information {
+.lorax-directions {
   grid-area: 2 / 1 / 4 / 3;
   text-align: left;
-  font-size: 1.5em;
-  text-wrap: wrap;
+  font-size: .8em;
   padding: 4px;
   border: 6px;
-  margin: 20% 16px 0px 16px;
-  position: fixed;
+  margin: 16px;
   font-family: "Josefin Sans", sans;
-  color:#FEFD0A;
+  color: white;
 }
-
-
 
 
 .directions {
@@ -88,10 +84,16 @@ h1 {
 
 }
 
-a.map {
+a.go-to-map {
   color: white;
   font-family: "Irish Grover", sans-serif;
-  font-size: 1.3em;
+  font-size: .8em;
+  text-decoration: none;
+  background-color: #4F9D14;
+  border-radius: 12px;
+  padding: 6px 10px 6px 10px;
+  border: 4px;
+  margin: 0px 4px 0px 0px;
 }
 
 ol {
@@ -105,7 +107,10 @@ li {
 }
 
 details.seen{
-  margin-left: 10%;
+  margin: 5%;
+  position:absolute;
+  bottom:0;
+  right:0;
 }
 
 .seen:not(:open) {
@@ -160,7 +165,7 @@ details.seen{
 } */
 
 .scroll-frame {
-  grid-area: 5 / 1 / 10 / 3;
+  grid-area: 5 / 1 / 11 / 3;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -425,7 +430,7 @@ details.seen{
 
 @media only screen and (max-width: 700px) {
   header {
-    font-size: 24px;
+    font-size: 30px;
   }
   .lorax-quote {
     font-size: 18px;
@@ -433,51 +438,12 @@ details.seen{
   }
   .scroll-frame {
   width: 600%;
-}
+  }
  
  a.map {
     font-size: 16px;
-   }
- 
-  .first-unless {
-    font-size: 12px;
   }
 
-  .second-unless {
-    font-size: 12px;
-  }
-
-  .third-unless {
-    font-size: 12px;
-  }
-
-  .fourth-unless {
-    font-size: 12px;
-  }
-
-  .fifth-unless {
-    font-size: 12px;
-  }
-
-  .sixth-unless {
-    font-size: 12px;
-  }
-
-  .seventh-unless {
-    font-size: 12px;
-  }
-
-  .eighth-unless {
-    font-size: 12px;
-  }
-
-  .ninth-unless {
-    font-size: 12px;
-  }
- 
-  .tenth-unless {
-    font-size: 12px;
-  }
   .plant-facts {
     font-size: 10px;
   }
@@ -485,59 +451,16 @@ details.seen{
   .info-list {
     font-size: 10px;
   }
-  
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
   header {
-  font-size: 40px;
+  font-size: 30px;
   }
   .lorax-quote {
     font-size: 24px;
   }
   
-   a.map {
-    font-size: 20px;
-   }
-   .first-unless {
-    font-size: 14px;
-  }
-
-  .second-unless {
-    font-size: 14px;
-  }
-
-  .third-unless {
-    font-size: 14px;
-  }
-
-  .fourth-unless {
-    font-size: 14px;
-  }
-
-  .fifth-unless {
-    font-size: 14px;
-  }
-
-  .sixth-unless {
-    font-size: 14px;
-  }
-
-  .seventh-unless {
-    font-size: 14px;
-  }
-
-  .eighth-unless {
-    font-size: 14px;
-  }
-
-  .ninth-unless {
-    font-size: 14px;
-  }
- 
-  .tenth-unless {
-    font-size: 14px;
-  }
   .plant-facts {
     font-size: 14px;
   }

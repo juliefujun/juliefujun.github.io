@@ -28,26 +28,30 @@ header.welcome {
   grid-row: 1;
   text-align: center;
   padding: 2%;
-  margin: 5% 5% 0% 5%;
-  font-size: 1.2em;
+  margin: 7% 7% 0% 7%;
+  font-size: 1.5em;
   font-family: "Irish Grover", sans-serif;
   color: #FEFD0A;
+  text-shadow: 2px 4px 4px rgba(103, 110, 123, 0.3);
 }
 
 p.landscape {
-  font-size: .8em;
+  font-size: 1.2em;
   font-family: "Irish Grover", sans-serif;
   color: #000000;
+  padding: 1.5em;
+  border: 1.5em;
 }
 
 p.welcome-message {
   grid-row: 1;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
-  padding: 1em;
+  padding: 1.8em;
   border: 1.5em;
   color: white;
-}
+  text-shadow: 2px 4px 4px rgba(103, 110, 123, 0.3);
+  font-size: 1.2em;
 
 p.instructions {
   font-family: "Josefin Sans", sans-serif;
@@ -65,15 +69,6 @@ p.instructions {
   margin: 0% 2% 2% 2%;
 }
 
-.go-to-main {
-  color: white;
-  text-decoration: none; 
-  font-size: .8em;
-  font-family: "Irish Grover", sans-serif;
-  top: 2rem;
-  left: 70rem;
-  z-index: 1;
-}
 
 a.go-to-main {
   background-color: #4F9D14;
@@ -82,6 +77,8 @@ a.go-to-main {
   border: 4px;
   color: white;
   text-decoration: none;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.2em;
 }
 
 a.go-to-main:link {
@@ -150,11 +147,15 @@ a.map:active {
 
  @media only screen and (min-width: 800px) {
   header.welcome {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   p.welcome-message {
     font-size: 20px;
+  }
+
+  p.landscape {
+    font-size: 1.5em;
   }
 }
 
@@ -169,7 +170,4 @@ a.map:active {
   }
 }
 
-
-
-
-
+}
