@@ -10,11 +10,17 @@
   grid-template-columns: 1fr;
   width: 100%;
   height: 100vh;
-  background-color: #E99C34;
+  background-color: #dc8d25;
   justify-content: center;
   justify-items: center;
   text-align: center;
   overflow: auto;
+  background-image: url("images/Lorax-Transparent-PNG.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  
 }
 
 header.welcome {
@@ -23,7 +29,6 @@ header.welcome {
   text-align: center;
   padding: 2%;
   margin: 5% 5% 0% 5%;
-  background-color: #E99C34;
   font-size: 1.2em;
   font-family: "Irish Grover", sans-serif;
   color: #FEFD0A;
@@ -124,6 +129,11 @@ a.map:hover {
 
 a.map:active {
   color: #FEFD0A; 
+}
+
+.welcome-message img {
+  width: 25%;
+  height: 25%;
 }
 
 @media only screen and (max-height: 700px) {

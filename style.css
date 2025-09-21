@@ -47,6 +47,7 @@ header {
   padding: 4px;
   border: 2px;
   font-family: "Irish Grover", Josefin Sans, sans-serif;
+  background-color: #E99C34;
 }
 
 h1 {
@@ -63,18 +64,21 @@ h1 {
   font-size: 20px;
 }
 
-.lorax-quote {
-  grid-area: 2 / 1 / 3 / 1;
+.lorax-information {
+  grid-area: 2 / 1 / 4 / 3;
   text-align: left;
   font-size: 1.5em;
   text-wrap: wrap;
   padding: 4px;
   border: 6px;
-  margin: 12px;
+  margin: 20% 16px 0px 16px;
   position: fixed;
   font-family: "Josefin Sans", sans;
   color:#FEFD0A;
 }
+
+
+
 
 .directions {
   grid-area: 4 / 1 / 5 / 3;
@@ -87,7 +91,7 @@ h1 {
 a.map {
   color: white;
   font-family: "Irish Grover", sans-serif;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 ol {
@@ -178,7 +182,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 
@@ -193,7 +197,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .third-plant-item {
@@ -207,7 +211,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .fourth-plant-item {
@@ -221,7 +225,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .fifth-plant-item {
@@ -235,7 +239,8 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
+  
 }
 
 .sixth-plant-item {
@@ -249,7 +254,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .seventh-plant-item {
@@ -263,7 +268,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .eighth-plant-item {
@@ -277,7 +282,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .ninth-plant-item {
@@ -291,7 +296,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .tenth-plant-item {
@@ -305,7 +310,7 @@ details.seen{
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .first-unless {
@@ -420,7 +425,7 @@ details.seen{
 
 @media only screen and (max-width: 700px) {
   header {
-    font-size: 30px;
+    font-size: 24px;
   }
   .lorax-quote {
     font-size: 18px;
@@ -492,7 +497,7 @@ details.seen{
   }
   
    a.map {
-    font-size: 16px;
+    font-size: 20px;
    }
    .first-unless {
     font-size: 14px;
@@ -546,12 +551,16 @@ details.seen{
 
 @media only screen and (max-height: 700px) and (orientation: landscape) {
   header {
-    font-size: 20px;
+    font-size: 18px;
   }
   .lorax-quote {
     font-size: 16px;
    
   }
+
+.lorax-information {
+   margin: 8% 16px 0px 16px;
+}
   .scroll-frame {
   width: 200%;
 }
@@ -728,6 +737,7 @@ h1.plant-name {
   background-color: #E99C34;
   padding: 10%;
   font-family: "Josefin Sans", sans;
+  color: white;
 }
 
 .info-list {
