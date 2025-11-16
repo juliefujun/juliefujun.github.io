@@ -4,20 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Irish+Grover&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Irish+Grover&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
-
-    <script src="d3.min.js"></script>
-    <script src="p5.min.js"></script>
-    <script src="script.js"></script>
   </head>
-  <body>
-    <h1>How I chose these plants!</h1>
-
-    <p>
-      I really liked the colorful aspect of the plants around the Art building.
-      They reminded me of the trees from The Lorax. Here is a visual displaying
-      the colors from photos of each plant. <br />
-      Rollover the grid and see what you find!
-    </p>
+  <body class="container">
+    <section class="dataH">
+      <h1><a class="utruffula" href="index.html">UTruffula</a></h1>
+      <br /><br />
+      <h2>How I chose these plants!</h2>
+      <br />
+      <p class="dataVizText">
+        I really liked the colorful aspect of the plants around the Art
+        building. They reminded me of the trees from The Lorax. Here is a visual
+        displaying the colors from photos of each plant. <br />
+        Rollover the grid and see what you find!
+      </p>
+    </section>
+    <section id="data-section" class="data-viz">
+      <script src="d3.min.js"></script>
+      <script src="p5.min.js"></script>
+      <script src="script.js"></script>
+    </section>
   </body>
 </html>
