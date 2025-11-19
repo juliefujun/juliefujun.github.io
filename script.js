@@ -5,7 +5,6 @@ let plantImages = [];
 let hoveredColor = null;
 let hoveredPlant = null;
 
-
 async function setup() {
   let canvas = createCanvas (600, 600);
   canvas.parent('data-section'); 
@@ -15,7 +14,7 @@ async function setup() {
   for (let plant of data) {
     plantImages[plant.name] = await loadImage("images/"+plant.image);
   }
-
+ 
   data = d3.sort(data, (a, b) => d3.ascending(a.place, b.place))
   console.log(data);
 
@@ -30,25 +29,14 @@ async function setup() {
     // creates Y axis label
     noStroke();
     push();
-    translate(margin - 40, height / 2);
-    rotate(-PI / 2);
+    translate(width / 2, 40);
     textAlign(CENTER, CENTER);
     fill(0);
     textSize(14);
-    text("Distinguishing colors", 0, 0);
+    textFont("Josefin Sans");
+    text("Utruffula plants unique colors", 0, 0);
     pop();
-
-    // creates vertical line
-    stroke(0);
-    strokeWeight(2);     
-    line(margin - 8, margin + 12, margin - 8, height - margin - 58);
-
-    // creates arrowhead
-    noStroke();
-    fill(0);
-    let arrowSize = 10;
-    triangle(margin - 8, margin + 12 - arrowSize, margin - 8 - arrowSize / 2, margin + 12, margin - 8 + arrowSize / 2, margin + 12);
-    
+    console.log(textFont);
     
     hoveredColor = null;
     data.forEach((plant) => {
@@ -81,6 +69,7 @@ async function setup() {
       rotate(angle);
 
       textAlign(RIGHT);
+      textFont("Josefin Sans");
       textSize(12);
       fill(0);
       text(plant.name, 0, 0);
@@ -111,12 +100,6 @@ async function setup() {
       textAlign(LEFT);
       text(hoveredColor, mouseX + 15, mouseY - 15);
       }
-    // creates hover function to display my images from the csv
-    if (hoveredPlant) {
-      let img = plantImages[hoveredPlant];
-        if (img) {
-          image(img, mouseX, mouseY - 100, height / 8, width / 6);
-        }
-     }
 
     }
+

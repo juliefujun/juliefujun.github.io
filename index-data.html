@@ -19,22 +19,49 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="container-viz">
-    <section class="dataH">
-      <h1><a class="utruffula" href="index.html">UTruffula</a></h1>
-      <br /><br />
-      <h2 class="chose">How I chose these plants!</h2>
-      <br />
-      <p class="dataVizText">
-        I really liked the colorful aspect of the plants around the Art
-        building. They reminded me of the trees from The Lorax. Here is a visual
-        displaying the colors from photos of each plant. <br />
-        Rollover the grid and see what you find!
-      </p>
-    </section>
-    <section id="data-section" class="data-viz">
-      <script src="d3.min.js"></script>
-      <script src="p5.min.js"></script>
-      <script src="script.js"></script>
-    </section>
+    <div class="dataInfo">
+      <section class="dataH">
+        <h1><a class="utruffula" href="index.html">UTruffula</a></h1>
+        <br /><br />
+        <h2 class="chose">The inspiration behind these plants!</h2>
+        <br />
+        <p class="dataVizText">
+          When exploring the Art Building's plants, I really liked the colorful
+          aspect of all the plants. They reminded me of the trees from The
+          Lorax, thus forming my theme. <br />
+          <br />
+          To the right is a visual displaying the colors from photos that I took
+          of each plant. Below are the images I pulled colors from. Using a hex
+          code picker website, I generated 10 different colors to display in the
+          chart. My goal was to display the colors I thought were unique to each
+          plant and the colors that set them apart in terms of hues. I hand
+          arranged the colors instead of generating an algorithm to represent
+          the colors from greens (bottom) to plant specific colors that were
+          defined through specific features such as their petals.<br /><br />
+          Rollover the grid and see what you find!
+        </p>
+      </section>
+      <section class="row">
+        <img src="images/lantana_2.jpg" />
+        <img src="images/bigMuhly_2.jpg" />
+        <img src="images/mitc_2.jpg" />
+        <img src="images/whiteAutumnSage_2.jpg" />
+        <img src="images/mahonia_2.jpg" />
+      </section>
+      <section class="col">
+        <img src="images/muicle_2.jpg" />
+        <img src="images/butterflyVine_2.jpg" />
+        <img src="images/morningGlory_2.jpg" />
+        <img src="images/Rosakorbin_2.jpg" />
+        <img src="images/baldCypress_2.jpg" />
+      </section>
+    </div>
+    <div class="data-viz">
+      <section id="data-section">
+        <script src="d3.min.js"></script>
+        <script src="p5.min.js"></script>
+        <script src="script.js"></script>
+      </section>
+    </div>
   </body>
 </html>
